@@ -1,0 +1,89 @@
+Script started on 2019-04-08 10:34:38+0530
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ssh exitssh cs17d58@14.139.189.217[2P92.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cftp cs17d58@14.139.189.217[2P92.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh cs17d58 @14.139.189.217 14.139.189.217[1P14.139.189.217
+ssh: Could not resolve hostname cs17d58: Name or service not known
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ssh cs17d58 @14.139.189.217[C[1P@14.139.189.217
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d58@14.139.189.217's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+23 packages can be updated.
+0 updates are security updates.
+
+*** System restart required ***
+Last login: Mon Apr  8 10:33:55 2019 from 137.97.149.4
+$ ls
+CS232.FOSS.Lab.pdf  examples.desktop
+$ cd ..
+$ cd
+$ cd ..
+$ ls
+ask	 cs17d06  cs17d14  cs17d22  cs17d30  cs17d38  cs17d46  cs17d54	cs17d62
+cec	 cs17d07  cs17d15  cs17d23  cs17d31  cs17d39  cs17d47  cs17d55	hari
+cs17d00  cs17d08  cs17d16  cs17d24  cs17d32  cs17d40  cs17d48  cs17d56	ieeecec
+cs17d01  cs17d09  cs17d17  cs17d25  cs17d33  cs17d41  cs17d49  cs17d57
+cs17d02  cs17d10  cs17d18  cs17d26  cs17d34  cs17d42  cs17d50  cs17d58
+cs17d03  cs17d11  cs17d19  cs17d27  cs17d35  cs17d43  cs17d51  cs17d59
+cs17d04  cs17d12  cs17d20  cs17d28  cs17d36  cs17d44  cs17d52  cs17d60
+cs17d05  cs17d13  cs17d21  cs17d29  cs17d37  cs17d45  cs17d53  cs17d61
+$ cs d cs17d38
+$ ls
+cs17d38  CS232.FOSS.Lab.pdf  examples.desktop  index.html  newfile.txt	path
+$ scp     cat nefile.txt^[[D^[[D^[[D^[[D^[[D^[[D                                 ewfile.txt
+new file is created:)
+$ pwd
+/home/cs17d38
+$ touch abc.txt
+touch: cannot touch 'abc.txt': Permission denied
+$ toucj h
+touch: missing file operand
+Try 'touch --help' for more information.
+$ cd
+$ ls
+CS232.FOSS.Lab.pdf  examples.desktop
+$ touch abc.txt
+$ ls
+abc.txt  CS232.FOSS.Lab.pdf  examples.desktop
+$ cat<  > abc, .txt
+thank you ""  :)
+^C
+$ ls
+abc.txt  CS232.FOSS.Lab.pdf  examples.desktop
+$ cat abc	 c.txt
+thank you :)
+$ du
+8	./.local/share/keyrings
+12	./.local/share
+16	./.local
+4	./.cache
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+340	.
+$ wget abc.txt
+--2019-04-08 10:48:22--  http://abc.txt/
+Resolving abc.txt (abc.txt)... failed: Name or service not known.
+wget: unable to resolve host address ‘abc.txt’
+$ wget      scp
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ s ss  scp abc.xtt    .x txt
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ scp 
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ packet_write_wait: Connection to 14.139.189.217 port 22: Broken pipe
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-04-08 11:03:26+0530
