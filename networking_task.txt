@@ -1,0 +1,160 @@
+Script started on 2019-04-08 10:06:00+0530
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ifconfig 
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 3480  bytes 257203 (257.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3480  bytes 257203 (257.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.13  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 2405:204:d180:fbef:dc87:26ac:1ee2:262  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::d1e5:f94:3c8a:f32b  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:204:d180:fbef:69fa:953c:d405:c90e  prefixlen 64  scopeid 0x0<global>
+        ether f8:59:71:70:88:ed  txqueuelen 1000  (Ethernet)
+        RX packets 12561  bytes 9591248 (9.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10300  bytes 1906025 (1.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ if wlp2s0c wlp2s0o wlp2s0n wlp2s0f wlp2s0i wlp2s0g wlp2s0[C wlp2s0
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.13  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 2405:204:d180:fbef:dc87:26ac:1ee2:262  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::d1e5:f94:3c8a:f32b  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:204:d180:fbef:69fa:953c:d405:c90e  prefixlen 64  scopeid 0x0<global>
+        ether f8:59:71:70:88:ed  txqueuelen 1000  (Ethernet)
+        RX packets 12565  bytes 9591584 (9.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10304  bytes 1906473 (1.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ if2[Kconfig lo
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 3480  bytes 257203 (257.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3480  bytes 257203 (257.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ifup wlp2s0
+Unknown interface wlp2s0
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ 2[Kifconfig wlp2s0 up
+SIOCSIFFLAGS: Operation not permitted
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ifconfig -a
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 3480  bytes 257203 (257.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3480  bytes 257203 (257.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.13  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 2405:204:d180:fbef:dc87:26ac:1ee2:262  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::d1e5:f94:3c8a:f32b  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:204:d180:fbef:69fa:953c:d405:c90e  prefixlen 64  scopeid 0x0<global>
+        ether f8:59:71:70:88:ed  txqueuelen 1000  (Ethernet)
+        RX packets 12580  bytes 9592902 (9.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10321  bytes 1908401 (1.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         _gateway        0.0.0.0         UG    600    0        0 wlp2s0
+link-local      0.0.0.0         255.255.0.0     U     1000   0        0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U     600    0        0 wlp2s0
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ping
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ping www.goohle/[K[K[K[Kgle.com
+PING www.google.com(maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004)) 56 data bytes
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=1 ttl=56 time=73.8 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=2 ttl=56 time=58.7 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=3 ttl=56 time=70.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=4 ttl=56 time=55.8 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=5 ttl=56 time=64.8 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=6 ttl=56 time=65.0 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=7 ttl=56 time=76.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=8 ttl=56 time=60.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=9 ttl=56 time=60.4 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=10 ttl=56 time=59.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=11 ttl=56 time=80.7 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=12 ttl=56 time=78.7 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=13 ttl=56 time=64.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=14 ttl=56 time=63.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=15 ttl=56 time=74.7 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=16 ttl=56 time=69.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=17 ttl=56 time=63.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=18 ttl=56 time=485 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=19 ttl=56 time=57.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=20 ttl=56 time=54.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=21 ttl=56 time=63.0 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=22 ttl=56 time=64.4 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=23 ttl=56 time=62.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=24 ttl=56 time=61.2 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=25 ttl=56 time=69.9 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=26 ttl=56 time=68.4 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=27 ttl=56 time=67.0 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=28 ttl=56 time=65.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=29 ttl=56 time=63.9 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=30 ttl=56 time=73.5 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=31 ttl=56 time=62.4 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=32 ttl=56 time=41.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=33 ttl=56 time=74.9 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=34 ttl=56 time=61.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=35 ttl=56 time=69.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=36 ttl=56 time=67.8 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=37 ttl=56 time=69.6 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=38 ttl=56 time=69.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=39 ttl=56 time=69.4 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=40 ttl=56 time=39.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=41 ttl=56 time=70.0 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=42 ttl=56 time=68.1 ms
+64 bytes from maa03s29-in-x04.1e100.net (2404:6800:4007:80a::2004): icmp_seq=43 ttl=56 time=90.8 ms
+^C
+--- www.google.com ping statistics ---
+43 packets transmitted, 43 received, 0% packet loss, time 42055ms
+rtt min/avg/max/mdev = 39.190/75.622/485.700/63.900 ms
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ping www.google.com= www.google.comc www.google.com[1P www.google.com[1P www.google.com[C www.google.com- www.google.com[C www.google.com[1Pwww.google.comc www.google.com[C www.google.com5 www.google.com
+PING www.google.com(maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004)) 56 data bytes
+64 bytes from maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004): icmp_seq=1 ttl=56 time=78.8 ms
+64 bytes from maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004): icmp_seq=2 ttl=56 time=73.6 ms
+64 bytes from maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004): icmp_seq=3 ttl=56 time=62.2 ms
+64 bytes from maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004): icmp_seq=4 ttl=56 time=70.4 ms
+64 bytes from maa03s21-in-x04.1e100.net (2404:6800:4007:800::2004): icmp_seq=5 ttl=56 time=81.0 ms
+
+--- www.google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 62.206/73.246/81.032/6.673 ms
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ netstst[K[K[Ktat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         _gateway        0.0.0.0         UG        0 0          0 wlp2s0
+link-local      0.0.0.0         255.255.0.0     U         0 0          0 wlp2s0
+192.168.43.0    0.0.0.0         255.255.255.0   U         0 0          0 wlp2s0
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ hostv [K[K www.google.com
+www.google.com has address 172.217.160.132
+www.google.com has IPv6 address 2404:6800:4007:800::2004
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ hostname
+swift
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-04-08 10:17:15+0530
