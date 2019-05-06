@@ -1,0 +1,495 @@
+Script started on 2019-04-25 10:04:54+0530
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo apt installn[K nginx
+[sudo] password for vyshakh: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-20 linux-headers-4.15.0-20-generic
+  linux-image-4.15.0-20-generic linux-modules-4.15.0-20-generic
+  linux-modules-extra-4.15.0-20-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  nginx-common nginx-core
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream nginx
+  nginx-common nginx-core
+0 upgraded, 8 newly installed, 0 to remove and 342 not upgraded.
+Need to get 598 kB of archives.
+After this operation, 2,103 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Connecting to in.archive.ubuntu.com][0m[33m0% [Connecting to in.archive.ubuntu.com][0m[33m0% [Connecting to in.archive.ubuntu.com (91.189.88.162)][0m[33m                                                        0% [Waiting for headers][0m                        Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-common all 1.14.0-0ubuntu1.2 [37.4 kB]
+[33m2% [1 nginx-common 11.3 kB/37.4 kB 30%][0m[33m5% [1 nginx-common 37.1 kB/37.4 kB 99%][0m[33m                                       8% [Working][0m            Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-geoip amd64 1.14.0-0ubuntu1.2 [11.2 kB]
+[33m8% [2 libnginx-mod-http-geoip 1,007 B/11.2 kB 9%][0m[33m                                                 12% [Waiting for headers][0m                         Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-image-filter amd64 1.14.0-0ubuntu1.2 [14.5 kB]
+[33m12% [3 libnginx-mod-http-image-filter 1,106 B/14.5 kB 8%][0m[33m                                                         16% [Waiting for headers][0m                         Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.14.0-0ubuntu1.2 [13.0 kB]
+[33m16% [4 libnginx-mod-http-xslt-filter 449 B/13.0 kB 3%][0m[33m                                                      20% [Waiting for headers][0m                         Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-mail amd64 1.14.0-0ubuntu1.2 [41.8 kB]
+[33m22% [5 libnginx-mod-mail 10.4 kB/41.8 kB 25%][0m[33m                                             28% [Waiting for headers][0m                         Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-stream amd64 1.14.0-0ubuntu1.2 [63.6 kB]
+[33m29% [6 libnginx-mod-stream 8,187 B/63.6 kB 13%][0m[33m                                               39% [Waiting for headers][0m                         Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-core amd64 1.14.0-0ubuntu1.2 [413 kB]
+[33m40% [7 nginx-core 2,216 B/413 kB 1%][0m[33m57% [7 nginx-core 131 kB/413 kB 32%][0m[33m74% [7 nginx-core 262 kB/413 kB 64%][0m[33m92% [7 nginx-core 396 kB/413 kB 96%][0m[33m                                    97% [Waiting for headers][0m                         Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx all 1.14.0-0ubuntu1.2 [3,596 B]
+[33m97% [8 nginx 157 B/3,596 B 4%][0m[33m                              100% [Working][0m              Fetched 598 kB in 6s (100 kB/s)
+Preconfiguring packages ...
+
+7[0;23r8[1ASelecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 211695 files and directories currently installed.)
+Preparing to unpack .../0-nginx-common_1.14.0-0ubuntu1.2_all.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [  2%][49m[39m [#.........................................................] 8Unpacking nginx-common (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [  5%][49m[39m [##........................................................] 87[24;0f[42m[30mProgress: [  7%][49m[39m [####......................................................] 8Selecting previously unselected package libnginx-mod-http-geoip.
+Preparing to unpack .../1-libnginx-mod-http-geoip_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 10%][49m[39m [#####.....................................................] 8Unpacking libnginx-mod-http-geoip (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 87[24;0f[42m[30mProgress: [ 15%][49m[39m [########..................................................] 8Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../2-libnginx-mod-http-image-filter_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 17%][49m[39m [#########.................................................] 8Unpacking libnginx-mod-http-image-filter (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 87[24;0f[42m[30mProgress: [ 22%][49m[39m [############..............................................] 8Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../3-libnginx-mod-http-xslt-filter_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Unpacking libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 27%][49m[39m [###############...........................................] 87[24;0f[42m[30mProgress: [ 29%][49m[39m [################..........................................] 8Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../4-libnginx-mod-mail_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 32%][49m[39m [##################........................................] 8Unpacking libnginx-mod-mail (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 34%][49m[39m [###################.......................................] 87[24;0f[42m[30mProgress: [ 37%][49m[39m [#####################.....................................] 8Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../5-libnginx-mod-stream_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 39%][49m[39m [######################....................................] 8Unpacking libnginx-mod-stream (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 41%][49m[39m [########################..................................] 87[24;0f[42m[30mProgress: [ 44%][49m[39m [#########################.................................] 8Selecting previously unselected package nginx-core.
+Preparing to unpack .../6-nginx-core_1.14.0-0ubuntu1.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 46%][49m[39m [##########################................................] 8Unpacking nginx-core (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 49%][49m[39m [############################..............................] 87[24;0f[42m[30mProgress: [ 51%][49m[39m [#############################.............................] 8Selecting previously unselected package nginx.
+Preparing to unpack .../7-nginx_1.14.0-0ubuntu1.2_all.deb ...
+7[24;0f[42m[30mProgress: [ 54%][49m[39m [###############################...........................] 8Unpacking nginx (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [################################..........................] 87[24;0f[42m[30mProgress: [ 59%][49m[39m [#################################.........................] 8Processing triggers for ufw (0.35-5) ...
+Rules updated for profile 'Apache'
+
+Processing triggers for ureadahead (0.100.0-20) ...
+ureadahead will be reprofiled on next reboot
+Setting up nginx-common (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 61%][49m[39m [###################################.......................] 8Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+7[24;0f[42m[30mProgress: [ 63%][49m[39m [####################################......................] 8Setting up libnginx-mod-http-image-filter (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [######################################....................] 87[24;0f[42m[30mProgress: [ 68%][49m[39m [#######################################...................] 8Processing triggers for systemd (237-3ubuntu10.11) ...
+Setting up libnginx-mod-mail (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 71%][49m[39m [#########################################.................] 87[24;0f[42m[30mProgress: [ 73%][49m[39m [##########################################................] 8Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 76%][49m[39m [###########################################...............] 87[24;0f[42m[30mProgress: [ 78%][49m[39m [#############################################.............] 8Setting up libnginx-mod-http-geoip (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 87[24;0f[42m[30mProgress: [ 83%][49m[39m [################################################..........] 8Setting up libnginx-mod-stream (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 85%][49m[39m [#################################################.........] 87[24;0f[42m[30mProgress: [ 88%][49m[39m [##################################################........] 8Setting up nginx-core (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 90%][49m[39m [####################################################......] 8Not attempting to start NGINX, port 80 is already in use.
+7[24;0f[42m[30mProgress: [ 93%][49m[39m [#####################################################.....] 8Setting up nginx (1.14.0-0ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 95%][49m[39m [#######################################################...] 87[24;0f[42m[30mProgress: [ 98%][49m[39m [########################################################..] 8Processing triggers for ureadahead (0.100.0-20) ...
+Processing triggers for ufw (0.35-5) ...
+Rules updated for profile 'Apache'
+
+
+7[0;24r8[1A[J]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo ufw app list
+[sudo] password for vyshakh: 
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  CUPS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo ufw allow ngini[KxHTTP[K[K[K[K[K[K[K[K[KNginx HTTP
+ERROR: Need 'to' or 'from' clause
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo ufw allow Nginx HTTP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo ufw allow Nginx HTTP"[K'[1@"[1P[C[1@'
+Rules updated
+Rules updated (v6)
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo ufw status
+Status: inactive
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ y[Ksystem status n[KNginx
+
+Command 'system' not found, did you mean:
+
+  command 'system3' from deb simh
+  command 'systemd' from deb systemd
+
+Try: sudo apt install <deb name>
+
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ system status Nginx[C[1@c[1@t[1@l
+[?1h=Unit Nginx.service could not be found.[m
+[K[?1l>]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo syste,[Kmctl enable Nginx
+Failed to enable unit: Unit file Nginx.service does not exist.
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ sudo systemctl enable Nginx HTTO[KP
+Failed to enable unit: Unit file Nginx.service does not exist.
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/
+Display all 230 possibilities? (y or n)
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/
+conf.d/            koi-win            nginx.conf         sites-enabled/
+fastcgi.conf       mime.types         proxy_params       snippets/
+fastcgi_params     modules-available/ scgi_params        uwsgi_params
+koi-utf            modules-enabled/   sites-available/   win-utf
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/sites-enabled/default 
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	# SSL configuration
+	#
+	# listen 443 ssl default_server;
+	# listen [::]:443 ssl default_server;
+	#
+	# Note: You should disable gzip for SSL traffic.
+	# See: https://bugs.debian.org/773332
+	#
+	# Read up on ssl_ciphers to ensure a secure configuration.
+	# See: https://bugs.debian.org/765782
+	#
+	# Self signed certs generated by the ssl-cert package
+	# Don't use them in a production server!
+	#
+	# include snippets/snakeoil.conf;
+
+	root /var/www/html;
+
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name _;
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+
+	# pass PHP scripts to FastCGI server
+	#
+	#location ~ \.php$ {
+	#	include snippets/fastcgi-php.conf;
+	#
+	#	# With php-fpm (or other unix sockets):
+	#	fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+	#	# With php-cgi (or other tcp sockets):
+	#	fastcgi_pass 127.0.0.1:9000;
+	#}
+
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	#location ~ /\.ht {
+	#	deny all;
+	#}
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#	listen 80;
+#	listen [::]:80;
+#
+#	server_name example.com;
+#
+#	root /var/www/example.com;
+#	index index.html;
+#
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+#}
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ la
+ arithmeticrep.c       [0m[01;34m.gconf[0m                .profile
+ .bash_history         [01;34m.git[0m                  [01;34mPublic[0m
+ .bash_logout          .gitconfig            quicksort.c
+ .bashrc               [01;34m.gnupg[0m                quicksortnr.c
+ [01;34m.cache[0m                hhtp_server           README.md
+ ceccs17d58.14.02.19   .ICEauthority         [01;34msnap[0m
+ circulardequeLL.c     infixtopostfix.c      [01;34m.ssh[0m
+ circularqueue.c       kernal_comp          'sudo add user vy'
+ [01;34m.config[0m               .lesshst              .sudo_as_admin_successful
+ [01;34m.dbus[0m                 [01;34m.local[0m                task
+ deque.c               microsoft.gpg         task_4
+ dequeLL.c             [01;34m.mozilla[0m              [01;34mTemplates[0m
+ [01;34mDesktop[0m               [01;34mMusic[0m                 [01;34m.thunderbird[0m
+ [01;34mDocuments[0m             networking_task.txt   [01;34mVideos[0m
+ [01;34mDownloads[0m             [01;34m.nv[0m                   [01;34m.vscode[0m
+ examples.desktop      [01;34mPictures[0m              vy.txt
+ ftp_server            [01;34m.pki[0m
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ ls
+ arithmeticrep.c       [0m[01;34mDownloads[0m          networking_task.txt   task
+ ceccs17d58.14.02.19   examples.desktop   [01;34mPictures[0m              task_4
+ circulardequeLL.c     ftp_server         [01;34mPublic[0m                [01;34mTemplates[0m
+ circularqueue.c       hhtp_server        quicksort.c           [01;34mVideos[0m
+ deque.c               infixtopostfix.c   quicksortnr.c         vy.txt
+ dequeLL.c             kernal_comp        README.md
+ [01;34mDesktop[0m               microsoft.gpg      [01;34msnap[0m
+ [01;34mDocuments[0m             [01;34mMusic[0m             'sudo add user vy'
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cd etc
+bash: cd: etc: No such file or directory
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cta[K[Kat etc//etc/[C[C[C[Cnginx/
+cat: /etc/nginx/: Is a directory
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/
+conf.d/            koi-win            nginx.conf         sites-enabled/
+fastcgi.conf       mime.types         proxy_params       snippets/
+fastcgi_params     modules-available/ scgi_params        uwsgi_params
+koi-utf            modules-enabled/   sites-available/   win-utf
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/sites-available/default 
+arithmeticrep.c            .lesshst
+.bash_history              .local/
+.bash_logout               microsoft.gpg
+.bashrc                    .mozilla/
+.cache/                    Music/
+ceccs17d58.14.02.19        networking_task.txt
+circulardequeLL.c          .nv/
+circularqueue.c            Pictures/
+.config/                   .pki/
+.dbus/                     .profile
+deque.c                    Public/
+dequeLL.c                  quicksort.c
+Desktop/                   quicksortnr.c
+Documents/                 README.md
+Downloads/                 snap/
+examples.desktop           .ssh/
+ftp_server                 sudo add user vy
+.gconf/                    .sudo_as_admin_successful
+.git/                      task
+.gitconfig                 task_4
+.gnupg/                    Templates/
+hhtp_server                .thunderbird/
+.ICEauthority              Videos/
+--More--[K]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/sites-available/default [K[K[K[K[K[K[K[Ken[K[K[K[K[K[K[K[K[K[K[K[Kenabled/default 
+arithmeticrep.c            .lesshst
+.bash_history              .local/
+.bash_logout               microsoft.gpg
+.bashrc                    .mozilla/
+.cache/                    Music/
+ceccs17d58.14.02.19        networking_task.txt
+circulardequeLL.c          .nv/
+circularqueue.c            Pictures/
+.config/                   .pki/
+.dbus/                     .profile
+deque.c                    Public/
+dequeLL.c                  quicksort.c
+Desktop/                   quicksortnr.c
+Documents/                 README.md
+Downloads/                 snap/
+examples.desktop           .ssh/
+ftp_server                 sudo add user vy
+.gconf/                    .sudo_as_admin_successful
+.git/                      task
+.gitconfig                 task_4
+.gnupg/                    Templates/
+hhtp_server                .thunderbird/
+.ICEauthority              Videos/
+--More--[Kinfixtopostfix.c           .vscode/
+--More--[Kkernal_comp                vy.txt
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cat /etc/nginx/sites-enabled/default [K^C
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cd root /var/www/html;[K
+bash: cd: too many arguments
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cd root
+bash: cd: root: No such file or directory
+]0;vyshakh@swift: ~[01;32mvyshakh@swift[00m:[01;34m~[00m$ cd ..
+]0;vyshakh@swift: /home[01;32mvyshakh@swift[00m:[01;34m/home[00m$ cd ..
+]0;vyshakh@swift: /[01;32mvyshakh@swift[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m    [01;34mdev[0m   [01;36minitrd.img[0m      [01;34mlib64[0m       [01;34mmnt[0m   [01;34mroot[0m  [01;34msnap[0m  [30;42mtmp[0m  [01;36mvmlinuz[0m
+[01;34mboot[0m   [01;34metc[0m   [01;36minitrd.img.old[0m  [01;34mlost+found[0m  [01;34mopt[0m   [01;34mrun[0m   [01;34msrv[0m   [01;34musr[0m  [01;36mvmlinuz.old[0m
+[01;34mcdrom[0m  [01;34mhome[0m  [01;34mlib[0m             [01;34mmedia[0m       [01;34mproc[0m  [01;34msbin[0m  [01;34msys[0m   [01;34mvar[0m
+]0;vyshakh@swift: /[01;32mvyshakh@swift[00m:[01;34m/[00m$ cd root
+bash: cd: root: Permission denied
+]0;vyshakh@swift: /[01;32mvyshakh@swift[00m:[01;34m/[00m$ sudo cd root
+sudo: cd: command not found
+]0;vyshakh@swift: /[01;32mvyshakh@swift[00m:[01;34m/[00m$ cd var
+]0;vyshakh@swift: /var[01;32mvyshakh@swift[00m:[01;34m/var[00m$ ls
+[0m[01;34mbackups[0m  [30;42mcrash[0m  [01;34mlocal[0m  [01;34mlog[0m   [30;42mmetrics[0m  [01;36mrun[0m   [01;34mspool[0m  [01;34mwww[0m
+[01;34mcache[0m    [01;34mlib[0m    [01;36mlock[0m   [01;34mmail[0m  [01;34mopt[0m      [01;34msnap[0m  [30;42mtmp[0m
+]0;vyshakh@swift: /var[01;32mvyshakh@swift[00m:[01;34m/var[00m$ cd www
+]0;vyshakh@swift: /var/www[01;32mvyshakh@swift[00m:[01;34m/var/www[00m$ ls
+[0m[01;34mhtml[0m
+]0;vyshakh@swift: /var/www[01;32mvyshakh@swift[00m:[01;34m/var/www[00m$ cd html
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ l
+index.html  index.nginx-debian.html
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ ls
+index.html  index.nginx-debian.html
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ cat index.nginx-debian.html 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ cat >[K<[K[K[K[K[Kcat >[K<[K> index.nginx-debian.html 
+bash: index.nginx-debian.html: Permission denied
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo gedit index.nginx-debian.html 
+
+** (gedit:5535): [1;33mWARNING[0m **: [34m10:55:59.522[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5535): [1;33mWARNING[0m **: [34m10:55:59.522[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5535): [1;33mWARNING[0m **: [34m10:56:04.740[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5535): [1;33mWARNING[0m **: [34m10:56:04.740[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5535): [1;33mWARNING[0m **: [34m10:56:06.980[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ cat  index.nginx-debian.html 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+</body>
+</html>
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo apache to [K ctl[1Pctl[C[1Ptoctl[C[C[C[C[C[C[1Pctl[1Pctl2ctl[C[C[C restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo apache2ctl restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo apache2 ctl restart
+Usage: apache2 [-D name] [-d directory] [-f file]
+               [-C "directive"] [-c "directive"]
+               [-k start|restart|graceful|graceful-stop|stop]
+               [-v] [-V] [-h] [-l] [-L] [-t] [-T] [-S] [-X]
+Options:
+  -D name            : define a name for use in <IfDefine name> directives
+  -d directory       : specify an alternate initial ServerRoot
+  -f file            : specify an alternate ServerConfigFile
+  -C "directive"     : process directive before reading config files
+  -c "directive"     : process directive after reading config files
+  -e level           : show startup errors of level (see LogLevel)
+  -E file            : log startup errors to file
+  -v                 : show version number
+  -V                 : show compile settings
+  -h                 : list available command line options (this page)
+  -l                 : list compiled in modules
+  -L                 : list available configuration directives
+  -t -D DUMP_VHOSTS  : show parsed vhost settings
+  -t -D DUMP_RUN_CFG : show parsed run settings
+  -S                 : a synonym for -t -D DUMP_VHOSTS -D DUMP_RUN_CFG
+  -t -D DUMP_MODULES : show all loaded modules 
+  -M                 : a synonym for -t -D DUMP_MODULES
+  -t -D DUMP_INCLUDES: show all included configuration files
+  -t                 : run syntax check for config files
+  -T                 : start without DocumentRoot(s) check
+  -X                 : debug mode (only one worker, do not detach)
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ a[Ksudo apache2 ctl restart[1P
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo apache2ctl restart[K[K[K[K[K[K[Kstop
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ nginx -s start
+nginx: invalid option: "-s start"
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ nginx -s start^C
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ man nginx
+[?1049h[22;0;0t[?1h=NGINX(8)                  BSD System Manager's Manual                 NGINX(8)[m
+[m
+[1mNAME[0m[m
+     [1mnginx[0m — HTTP and reverse proxy server, mail proxy server[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mnginx[0m [[1m-?hqTtVv[0m] [[1m-c[0m [4mfile[24m] [[1m-g[0m [4mdirectives[24m] [[1m-p[0m [4mprefix[24m] [[1m-s[0m [4msignal[24m][m
+[m
+[1mDESCRIPTION[0m[m
+     [1mnginx[0m (pronounced “engine x”) is an HTTP and reverse proxy server, as[m
+     well as a mail proxy server.  It is known for its high performance, sta‐[m
+     bility, rich feature set, simple configuration, and low resource consump‐[m
+     tion.[m
+[m
+     The options are as follows:[m
+[m
+     [1m-?[0m, [1m-h[0m         Print help.[m
+[m
+     [1m-c[0m [4mfile[24m        Use an alternative configuration [4mfile[24m.[m
+[m
+     [1m-g[0m [4mdirectives[24m  Set global configuration directives.  See [4mEXAMPLES[24m for[m
+                    details.[m
+[m
+[7m Manual page nginx(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-p[0m [4mprefix[24m      Set the prefix path.  The default value is[m
+[7m Manual page nginx(8) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    [4m/usr/share/nginx[24m.[m
+[7m Manual page nginx(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-q[0m             Suppress non-error messages during configuration testing.[m
+[7m Manual page nginx(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-s[0m [4msignal[24m      Send a signal to the master process.  The argument [4msignal[24m[m
+[7m Manual page nginx(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    can be one of: [1mstop[0m, [1mquit[0m, [1mreopen[0m, [1mreload[0m.  The following[m
+[7m Manual page nginx(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    table shows the corresponding system signals:[m
+[7m Manual page nginx(8) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    [1mstop[0m    SIGTERM[m
+[7m Manual page nginx(8) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    [1mquit[0m    SIGQUIT[m
+[7m Manual page nginx(8) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    [1mreopen[0m  SIGUSR1[m
+[7m Manual page nginx(8) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    [1mreload[0m  SIGHUP[m
+[7m Manual page nginx(8) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-t[0m             Do not run, just test the configuration file.  [1mnginx[0m[m
+[7m Manual page nginx(8) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    checks the configuration file syntax and then tries to[m
+[7m Manual page nginx(8) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    open files referenced in the configuration file.[m
+[7m Manual page nginx(8) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-T[0m             Same as [1m-t[0m, but additionally dump configuration files to[m
+[7m Manual page nginx(8) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    standard output.[m
+[7m Manual page nginx(8) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page nginx(8) line 22 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ man nginxnginx -s start[K[K[K[K[Krelad[K[Koad
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2019/04/25 11:07:55 [warn] 6128#6128: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2019/04/25 11:07:55 [notice] 6128#6128: signal process started
+2019/04/25 11:07:55 [error] 6128#6128: open() "/run/nginx.pid" failed (2: No such file or directory)
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo !!
+sudo nginx -s reload
+nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo nginx
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ c[Kls
+index.html  index.nginx-debian.html
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo gedit index.
+
+** (gedit:6148): [1;33mWARNING[0m **: [34m11:08:23.229[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ sudo gedit index.html 
+
+** (gedit:6159): [1;33mWARNING[0m **: [34m11:09:10.043[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:6159): [1;33mWARNING[0m **: [34m11:09:10.044[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:6159): [1;33mWARNING[0m **: [34m11:10:43.057[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:6159): [1;33mWARNING[0m **: [34m11:10:43.058[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+^C
+]0;vyshakh@swift: /var/www/html[01;32mvyshakh@swift[00m:[01;34m/var/www/html[00m$ exit
+exit
+
+Script done on 2019-04-25 11:11:19+0530
